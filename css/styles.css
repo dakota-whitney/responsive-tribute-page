@@ -1,26 +1,41 @@
-body {
-  background: linear-gradient(-90deg, red, yellow);
+* {
+  padding: 0;
+  margin: 0;
 }
 
 #main {
-  padding: 0px 300px 0px 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
   font-family: Montserrat, Courier, monospace;
 }
 
-#title {
-  text-decoration: underline;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+#header {
   text-align: center;
+}
+
+#title {
+  font-size: 30px;
+  text-decoration: underline;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
 }
 
 #image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5px;
   max-width: 100%;
   height: auto;
   box-shadow: 0px 0px 20px;
+}
+
+#img-div {
+  width: 100%;
+  height: auto;
+  padding: 35px 0px 35px 0px;
+  background: white;
 }
 
 #img-caption {
@@ -34,14 +49,21 @@ body {
 }
 
 #timeline-wrapper {
-  padding: 0px 100px 0px 100px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0px auto 0px auto;
 }
 
 #timeline > li {
-  margin: 10px 0px 10px 0px;
+  margin: 50px 0px 50px 0px;
 }
 
-h2,
-p {
-  text-align: center;
+h2 {
+  margin: 20px 0px 20px 0px;
+}
+
+@media (max-width: 1000px) {
+  #timeline-wrapper {
+    max-width: 300px;
+  }
 }
