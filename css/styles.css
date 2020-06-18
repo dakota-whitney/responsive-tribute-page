@@ -62,7 +62,7 @@ h2 {
   margin: 20px 0px 20px 0px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   #timeline-wrapper {
     max-width: 300px;
   }
